@@ -1,0 +1,27 @@
+Diversos Usos del comando namp
+
+1. nmap scamme.nmap.org: 
+Ejecuta un escaneo de Conexion TCP, el resultado que mostrara es informacion basico 
+con una lista de los puertos TCP abiertos y filtrados del mismo usuario que ejecuta el comando.
+
+2.nmap -sn <192.168.1.0/24>
+La opcion -sn indica a nmap que muestre los hosts en linea y que no realice un
+escaneo de puerto, es utili para saber rapidamentes los equipos de la resultado
+
+3.nmap -sS Nos permite escanear los puertos TCP
+
+4.namp 192.168.1.10-30 Nos permite escanear los puertos, dentro de un rango de direcciones IP
+
+5.nmap -sU 192.168.1.1 Escanea los puertos basados en UDP
+
+6.nmap -p- localhost Analiza los puertos disponibles en el dispositivo
+
+7.nmap -A 192-168.1.1 Detecta servicios y sistemas operativo
+
+8.nmap -oN ficheroSalida 192.168.1.1 El formato predeterminado se puede guardar en un archivo en este caso en un 
+archivo de texto plano, con el uso de la opcion -oN
+
+9.namp -top-ports 20 192.168.10.1 Escanea un numero de puertos dados de los mas importantes
+
+10.namp -F 192.168.1.1 Escanea los puertos mas utilizados
+
